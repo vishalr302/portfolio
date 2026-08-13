@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Data science, machine learning, and software engineering projects by Vishal Ramesh.">
+  <title>Vishal Ramesh | Projects</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="index.html">Vishal Ramesh<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" aria-current="page" href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro portfolio-intro container">
+      <p class="eyebrow">Selected projects</p>
+      <h1>Building explainable systems from messy, real-world data.</h1>
+      <p class="page-intro-text">These projects span natural language processing, data engineering, computer vision, web data collection, dashboards, testing, and human-review workflows. Each one turns an open-ended problem into a documented and inspectable software pipeline.</p>
+      <nav class="project-jump-links" aria-label="Jump to a project">
+        <a href="#grant-intelligence">Grant intelligence</a>
+        <a href="#nfl-detector">NFL penalty detector</a>
+        <a href="#wildfire-scraper">Wildfire smoke scraper</a>
+      </nav>
+    </section>
+
+    <section class="impact-strip" aria-label="Project summary metrics">
+      <div class="container impact-grid portfolio-impact-grid">
+        <div><strong>3</strong><span>end-to-end systems</span></div>
+        <div><strong>17/17</strong><span>documented tests passed</span></div>
+        <div><strong>4</strong><span>suspected penalty rule flags</span></div>
+        <div><strong>29</strong><span>wildfire output fields</span></div>
+      </div>
+    </section>
+
+    <section class="case-study section" id="grant-intelligence">
+      <div class="container">
+        <header class="case-study-header">
+          <div>
+            <p class="project-number">01 / Data engineering + NLP / 2026</p>
+            <h2>Grant Intelligence Platform</h2>
+            <p class="case-study-lede">A transparent decision-support dashboard that ranks Northeast grant-funder prospects for EcoServants.</p>
+          </div>
+          <ul class="case-study-badges" aria-label="Project highlights">
+            <li>Python</li>
+            <li>Pandas + NLP</li>
+            <li>100-point ranking</li>
+            <li>5/5 tests</li>
+          </ul>
+        </header>
+
+        <div class="case-study-grid">
+          <div class="project-art case-study-art art-one" role="img" aria-label="Grant Intelligence Platform abstract visual">
+            <div class="art-label">
+              <span>Input</span><strong>IRS Business Master File CSVs</strong>
+              <span>Output</span><strong>Ranked, explainable prospect list</strong>
+            </div>
+          </div>
+          <div class="case-study-summary">
+            <p class="eyebrow">Problem</p>
+            <p>Nonprofit development teams must screen large IRS Business Master File datasets to find grantmakers that may align with their mission. Manual review is slow, and a recommendation is not useful if a researcher cannot understand why a prospect ranked highly.</p>
+            <p class="eyebrow case-summary-label">Approach</p>
+            <p>The platform cleans and deduplicates IRS data, identifies likely 501(c)(3) grantmakers, classifies mission alignment, compares organization text with EcoServants using TF-IDF and cosine similarity, and combines six transparent signals into a 100-point score.</p>
+            <ul class="tags" aria-label="Technologies used">
+              <li>Python</li><li>Pandas</li><li>scikit-learn</li><li>Streamlit</li><li>Plotly</li><li>pytest</li>
+            </ul>
+            <div class="case-study-actions">
+              <a class="button button-primary" href="https://github.com/vishalr302/grant-intelligence-platform" target="_blank" rel="noreferrer">View on GitHub <span aria-hidden="true">&nearr;</span></a>
+              <a class="button button-secondary" href="project-briefs/Grant-Intelligence-Platform-One-Pager.pdf" target="_blank">Project brief</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-study-details">
+          <article>
+            <p class="eyebrow">Key capabilities</p>
+            <h3>Auditable prospect research</h3>
+            <ul class="detail-list">
+              <li>Reduces a large nonprofit registry to a reviewable shortlist so research can focus on stronger leads.</li>
+              <li>Assigns Environment/Conservation, Youth/Education, Community Improvement, Public Benefit, or Other mission categories.</li>
+              <li>Makes rankings inspectable through component scores, High/Medium/Low priority, matched terms, and a plain-language selection reason.</li>
+              <li>Handles multi-file upload, header and EIN normalization, invalid IDs, duplicate filings, missing text, financial and NTEE codes, and geographic scope.</li>
+              <li>Provides searchable tables, filters, Plotly charts, a ranked table, and CSV export through Streamlit.</li>
+            </ul>
+          </article>
+          <article>
+            <p class="eyebrow">Pipeline</p>
+            <h3>From raw CSVs to ranked leads</h3>
+            <ol class="pipeline-list">
+              <li>Upload CSV files or use the bundled sample</li>
+              <li>Normalize, validate, and deduplicate records</li>
+              <li>Keep the configured nine-state Northeast scope</li>
+              <li>Screen likely 501(c)(3) grantmaker names</li>
+              <li>Assign mission categories and TF-IDF similarity</li>
+              <li>Calculate a 100-point score, priority, and reason</li>
+              <li>Serve filters, charts, ranked table, and CSV export</li>
+            </ol>
+          </article>
+          <article class="verification-card">
+            <p class="eyebrow">Verification</p>
+            <strong>5 tests passed</strong>
+            <p>The automated suite covers cleaning, schema errors, mission categories, similarity and ranking, charts, and cached pipeline output. The shipped 14-row synthetic fixture resolves to two likely Northeast funders.</p>
+            <p class="microcopy">12 maintained project files &middot; MIT licensed</p>
+          </article>
+        </div>
+        <aside class="limitations-panel" aria-label="Grant Intelligence Platform limitations">
+          <p class="eyebrow">Limitations</p>
+          <h3>Decision support, not a funding guarantee</h3>
+          <p>The ranking does not confirm that a foundation is accepting applications or will provide funding. IRS records may be incomplete or outdated, so every recommended prospect should be verified through the funder's website and recent Form 990 filings.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="case-study section section-tinted" id="nfl-detector">
+      <div class="container">
+        <header class="case-study-header">
+          <div>
+            <p class="project-number">02 / Computer vision / 2025</p>
+            <h2>NFL Pre-Snap Penalty Detector</h2>
+            <p class="case-study-lede">An explainable computer vision prototype for first-pass review of broadcast football clips.</p>
+          </div>
+          <ul class="case-study-badges" aria-label="Project highlights">
+            <li>Python 3.10+</li>
+            <li>Computer vision</li>
+            <li>4 rule flags</li>
+            <li>9/9 tests</li>
+          </ul>
+        </header>
+
+        <div class="case-study-grid case-study-grid-reversed">
+          <div class="project-art case-study-art art-three" role="img" aria-label="NFL Pre-Snap Penalty Detector abstract visual">
+            <div class="art-label">
+              <span>Input</span><strong>Broadcast football video</strong>
+              <span>Output</span><strong>Explainable suspected-penalty flags</strong>
+            </div>
+          </div>
+          <div class="case-study-summary">
+            <p class="eyebrow">Problem</p>
+            <p>Reviewing broadcast footage for pre-snap penalties requires tracking player movement, team position, the line of scrimmage, the snap, and sometimes the play clock. Broadcast video introduces camera motion, occlusion, inconsistent colors, and uncertain field geometry.</p>
+            <p class="eyebrow case-summary-label">Approach</p>
+            <p>The prototype applies YOLOv8 person detection frame by frame, links detections into player tracks, classifies teams with color heuristics, estimates the line of scrimmage and collective snap, optionally reads the play clock with OCR, and evaluates four explainable temporal rules.</p>
+            <ul class="tags" aria-label="Technologies used">
+              <li>Python</li><li>OpenCV</li><li>YOLOv8</li><li>NumPy</li><li>Tesseract OCR</li><li>pytest</li>
+            </ul>
+            <div class="case-study-actions">
+              <a class="button button-primary" href="https://github.com/vishalr302/NFL-Penalty-Detector-Project" target="_blank" rel="noreferrer">GitHub repository <span aria-hidden="true">&nearr;</span></a>
+              <a class="button button-secondary" href="project-briefs/NFL-Pre-Snap-Penalty-Detector-One-Pager.pdf" target="_blank">Project brief</a>
+            </div>
+            <p class="repository-note">This repository URL is configured in the local project, but it is not currently publicly accessible.</p>
+          </div>
+        </div>
+
+        <div class="case-study-details">
+          <article>
+            <p class="eyebrow">Key capabilities</p>
+            <h3>Explainable review flags</h3>
+            <ul class="detail-list">
+              <li>Flags false starts from sustained offensive movement before the estimated collective snap.</li>
+              <li>Flags offsides from a defender crossing the estimated line of scrimmage before the snap.</li>
+              <li>Flags delay of game from repeated OCR readings of zero before the snap and too many men from more than 11 active team tracks.</li>
+              <li>Keeps decisions inspectable through track IDs, event frames, confidence, snap frame, and estimated line of scrimmage.</li>
+              <li>Accepts manual offense, direction, line-of-scrimmage, and clock-region overrides when automatic assumptions are weak.</li>
+            </ul>
+          </article>
+          <article>
+            <p class="eyebrow">Pipeline</p>
+            <h3>From video to review flags</h3>
+            <ol class="pipeline-list">
+              <li>Accept CLI or script options and a video</li>
+              <li>Read frames, dimensions, frame count, and FPS</li>
+              <li>Detect people with YOLOv8</li>
+              <li>Classify team colors and build proximity tracks</li>
+              <li>Estimate line of scrimmage, snap, and optional clock OCR</li>
+              <li>Evaluate four pre-snap rules</li>
+              <li>Return structured results, reasons, labels, and annotations</li>
+            </ol>
+          </article>
+          <article class="verification-card">
+            <p class="eyebrow">Verification</p>
+            <strong>9 tests passed</strong>
+            <p>Tests cover line-of-scrimmage estimation, tracking continuity, all four rule evaluators, clock parsing, peak-motion snap selection, and video reads.</p>
+            <p class="microcopy">38 maintained or shipped files &middot; MIT licensed</p>
+          </article>
+        </div>
+        <aside class="limitations-panel" aria-label="NFL Pre-Snap Penalty Detector limitations">
+          <p class="eyebrow">Limitations</p>
+          <h3>Experimental flags, not officiating decisions</h3>
+          <p>Camera motion, occlusion, legal shifts, inaccurate team-color classification, scoreboard delay, and an uncertain line of scrimmage can affect results. Delay-of-game evidence requires a tight play-clock region and a local Tesseract installation. The project should use only footage the user is authorized to analyze or distribute.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="case-study section" id="wildfire-scraper">
+      <div class="container">
+        <header class="case-study-header">
+          <div>
+            <p class="project-number">03 / Data collection + research tooling / 2026</p>
+            <h2>Northeast Wildfire Smoke Scraper</h2>
+            <p class="case-study-lede">An evidence-aware data collection pipeline for cross-border smoke events affecting the Northeast U.S.</p>
+          </div>
+          <ul class="case-study-badges" aria-label="Project highlights">
+            <li>Python standard library</li>
+            <li>29 output fields</li>
+            <li>15 source seeds</li>
+            <li>3/3 tests</li>
+          </ul>
+        </header>
+
+        <div class="case-study-grid">
+          <div class="project-art case-study-art art-two" role="img" aria-label="Northeast Wildfire Smoke Scraper abstract visual">
+            <div class="art-label">
+              <span>Input</span><strong>Local or official web pages</strong>
+              <span>Output</span><strong>CSV, JSON, and HTML reports</strong>
+            </div>
+          </div>
+          <div class="case-study-summary">
+            <p class="eyebrow">Problem</p>
+            <p>Wildfire-smoke evidence is spread across government, NOAA, NASA, EPA, emergency-management, university, and other official pages. Researchers need a consistent dataset without turning missing or uncertain evidence into unsupported claims.</p>
+            <p class="eyebrow case-summary-label">Approach</p>
+            <p>The scraper fetches local or official pages, converts HTML to readable text, extracts assignment fields, filters for Northeast relevance, removes duplicates, and exports CSV, JSON, and HTML. Deterministic rules work without dependencies; optional AI assists difficult fields while provenance stays program-controlled.</p>
+            <ul class="tags" aria-label="Technologies used">
+              <li>Python</li><li>urllib</li><li>HTMLParser</li><li>dataclasses</li><li>CSV/JSON</li><li>unittest</li>
+            </ul>
+            <div class="case-study-actions">
+              <a class="button button-primary" href="https://github.com/vishalr302" target="_blank" rel="noreferrer">GitHub profile <span aria-hidden="true">&nearr;</span></a>
+              <a class="button button-secondary" href="project-briefs/Wildfire-Smoke-Scraper-One-Pager.pdf" target="_blank">Project brief</a>
+            </div>
+            <p class="repository-note">A project-specific GitHub repository has not been published yet.</p>
+          </div>
+        </div>
+
+        <div class="case-study-details">
+          <article>
+            <p class="eyebrow">Key capabilities</p>
+            <h3>Evidence-aware collection</h3>
+            <ul class="detail-list">
+              <li>Produces a consistent 29-column research dataset covering incident identity, origin, smoke direction, affected communities, border status, AQI/PM2.5, advisories, effects, source URLs, and verification details.</li>
+              <li>Reduces repeated downloads with content hashing and cache support while respecting sources through rate limits and timeouts.</li>
+              <li>Uses explicit "Not Reported" and "Not Confirmed" safeguards so absent evidence is never silently turned into a claim.</li>
+              <li>Supports deterministic rules mode and optional OpenAI Responses API extraction for difficult fields.</li>
+              <li>Ships an offline NOAA-style fixture and demo outputs for repeatable review without internet access or API credentials.</li>
+            </ul>
+          </article>
+          <article>
+            <p class="eyebrow">Pipeline</p>
+            <h3>From source pages to research data</h3>
+            <ol class="pipeline-list">
+              <li>Load CLI options and source-seed JSON</li>
+              <li>Fetch local or HTTP content with cache and rate limits</li>
+              <li>Convert HTML into readable text</li>
+              <li>Extract fields with rules and source hints</li>
+              <li>Optionally enhance difficult evidence fields with AI</li>
+              <li>Filter for Northeast relevance and deduplicate</li>
+              <li>Export CSV, JSON, HTML, and an error summary</li>
+            </ol>
+          </article>
+          <article class="verification-card">
+            <p class="eyebrow">Verification</p>
+            <strong>3 tests passed</strong>
+            <p>The tests validate all 29 CSV fields and expected values, cross-border extraction, and the safeguard that unsupported border claims stay unconfirmed. All three demo export formats are included.</p>
+            <p class="microcopy">29 maintained files &middot; Python 3.10+ package</p>
+          </article>
+        </div>
+        <aside class="limitations-panel" aria-label="Northeast Wildfire Smoke Scraper limitations">
+          <p class="eyebrow">Limitations</p>
+          <h3>Evidence quality determines record quality</h3>
+          <p>Long-range smoke reports often describe a regional complex rather than one named fire. The scraper does not invent incident acreage, dates, AQI, or damage figures: missing values remain "Not Reported," and uncertain border movement remains "Not Confirmed." AI mode requires API usage and human review, and source terms and request-rate limits must be respected.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="contact-strip">
+      <div class="container contact-strip-inner">
+        <div>
+          <p class="eyebrow">Summer 2027 opportunities</p>
+          <h2>Open to data science, software engineering, and AI/ML internships.</h2>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-light" href="mailto:vishalramesh.work@gmail.com">Email me <span aria-hidden="true">&nearr;</span></a>
+          <a class="button button-outline-light" href="https://github.com/vishalr302" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Vishal Ramesh</p>
+      <div class="social-links">
+        <a href="https://github.com/vishalr302" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="mailto:vishalramesh.work@gmail.com">Email</a>
+        <a href="tel:+15086189026">(508) 618-9026</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
