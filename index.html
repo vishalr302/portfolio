@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Vishal Ramesh, a Carnegie Mellon Statistics and Machine Learning student working across data science, software engineering, NLP, and computer vision.">
+  <meta name="description" content="Portfolio of Vishal Ramesh, a Carnegie Mellon Statistics and Machine Learning student working in data science, software engineering, NLP, and computer vision.">
   <title>Vishal Ramesh | Home</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- SITE NAVIGATION: edit the same links in index.html, about.html, and portfolio.html. -->
   <header class="site-header">
     <nav class="nav container" aria-label="Primary navigation">
-      <a class="brand" href="index.html">Vishal Ramesh<span>.</span></a>
+      <a class="brand" href="index.html">Vishal Ramesh</a>
       <ul class="nav-links">
         <li><a class="active" aria-current="page" href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -20,223 +21,140 @@
   </header>
 
   <main>
-    <section class="hero container">
-      <div class="hero-copy">
-        <p class="eyebrow">Statistics &amp; Machine Learning at Carnegie Mellon</p>
-        <h1>Vishal Ramesh - building practical systems with data, machine learning, and software.</h1>
-        <p class="hero-text">I am a rising junior with experience in software development, data pipelines, natural language processing, and computer vision. I work with Python, SQL, Pandas, and related tools, and I am seeking a Summer 2027 internship in data science, software engineering, AI/ML, or a related technology role.</p>
-        <div class="button-row">
-          <a class="button button-primary" href="#projects">Explore my projects <span aria-hidden="true">&darr;</span></a>
-          <a class="button button-secondary" href="mailto:vishalramesh.work@gmail.com">Email me</a>
+    <!-- HOME INTRO: this is the main text recruiters see first. -->
+    <section class="intro container">
+      <p class="eyebrow">Statistics &amp; Machine Learning at Carnegie Mellon</p>
+      <h1>Hi, I&rsquo;m Vishal Ramesh.</h1>
+      <p class="lead">I build practical software and data systems across data engineering, natural language processing, and computer vision. I am a rising junior seeking a Summer 2027 internship in data science, software engineering, AI/ML, or a related technology role.</p>
+      <div class="button-row">
+        <a class="primary-link" href="portfolio.html">View my projects <span aria-hidden="true">&rarr;</span></a>
+        <a class="secondary-link" href="mailto:vishalramesh.work@gmail.com">vishalramesh.work@gmail.com</a>
+      </div>
+    </section>
+
+    <!-- PROFILE DETAILS: keep these as short label/value rows. -->
+    <section class="section">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Profile</p>
+          <h2>Background</h2>
         </div>
-      </div>
-      <div class="hero-visual">
-        <!-- Photo intentionally left blank because the resume does not include one. -->
-        <div class="portrait-placeholder" aria-hidden="true"></div>
-        <p>Mansfield, MA &middot; Open to Summer 2027 internships</p>
+        <dl class="facts">
+          <div class="fact">
+            <dt>Education</dt>
+            <dd>B.S. in Statistics and Machine Learning, Carnegie Mellon University, expected May 2028.</dd>
+          </div>
+          <div class="fact">
+            <dt>Location</dt>
+            <dd>Mansfield, Massachusetts; studying in Pittsburgh, Pennsylvania.</dd>
+          </div>
+          <div class="fact">
+            <dt>Languages</dt>
+            <dd>Python, Java, C++, SQL, HTML/CSS, SystemVerilog, and MATLAB.</dd>
+          </div>
+          <div class="fact">
+            <dt>Tools</dt>
+            <dd>Pandas, NumPy, scikit-learn, OpenCV, YOLOv8, Streamlit, Plotly, Git, Linux, and Excel.</dd>
+          </div>
+        </dl>
       </div>
     </section>
 
-    <section class="impact-strip" aria-label="Selected impact metrics">
-      <div class="container impact-grid">
-        <div><strong>100,000+</strong><span>nonprofit records processed</span></div>
-        <div><strong>8</strong><span>Northeastern states analyzed</span></div>
-        <div><strong>25+</strong><span>wildfire data sources consolidated</span></div>
-        <div><strong>50+</strong><span>NFL broadcast clips analyzed</span></div>
-      </div>
-    </section>
-
-    <section class="section section-tinted">
+    <!-- EXPERIENCE: duplicate or delete an entire <article class="experience-entry"> block. -->
+    <section class="section">
       <div class="container">
         <div class="section-heading">
-          <div>
-            <p class="eyebrow">Technical toolkit</p>
-            <h2>Skills &amp; tools</h2>
-          </div>
-          <p>Programming, data analysis, machine learning, computer vision, development, and collaboration tools used across academic, nonprofit, and research work.</p>
-        </div>
-        <div class="skill-groups">
-          <article class="skill-group">
-            <h3>Programming languages</h3>
-            <ul class="skill-cloud">
-              <li>Python</li>
-              <li>Java</li>
-              <li>C++</li>
-              <li>SQL</li>
-              <li>HTML/CSS</li>
-              <li>SystemVerilog</li>
-              <li>MATLAB</li>
-            </ul>
-          </article>
-          <article class="skill-group">
-            <h3>Libraries &amp; tools</h3>
-            <ul class="skill-cloud">
-              <li>Pandas</li>
-              <li>NumPy</li>
-              <li>scikit-learn</li>
-              <li>OpenCV</li>
-              <li>YOLOv8</li>
-              <li>Git</li>
-              <li>Linux</li>
-              <li>Codex</li>
-              <li>Claude</li>
-              <li>Excel</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section container two-column education-section">
-      <div>
-        <p class="eyebrow">Education</p>
-        <h2>Carnegie Mellon University</h2>
-      </div>
-      <article class="education-card">
-        <p class="project-number">August 2024 - Present &middot; Pittsburgh, PA</p>
-        <h3>Bachelor of Science in Statistics and Machine Learning</h3>
-        <p>Expected graduation: May 2028</p>
-      </article>
-    </section>
-
-    <section class="section section-tinted">
-      <div class="container two-column">
-        <div>
           <p class="eyebrow">Experience</p>
           <h2>Research, data, and software work</h2>
         </div>
-        <div class="timeline resume-timeline">
-          <article>
-            <p class="timeline-date">June 2026 - August 2026 &middot; Remote</p>
-            <h3>Data Analysis and Research Intern</h3>
-            <p class="organization">EcoServants</p>
-            <ul class="detail-list">
-              <li>Delivered two open-source data projects with mentor guidance and weekly progress reviews.</li>
-              <li>Transformed more than 100,000 foundation records across eight Northeastern states into prioritized funding opportunities.</li>
-              <li>Validated and standardized wildfire data collected across New England to support environmental research and public awareness.</li>
-            </ul>
+
+        <div class="experience-list">
+          <article class="experience-entry">
+            <p class="meta">Jun 2026 &ndash; Aug 2026<br>Remote</p>
+            <div>
+              <h3>Data Analysis and Research Intern</h3>
+              <p class="role-company">EcoServants</p>
+              <ul class="detail-list">
+                <li>Delivered two open-source data projects with mentor guidance and weekly progress reviews.</li>
+                <li>Transformed more than 100,000 foundation records across eight Northeastern states into prioritized funding opportunities.</li>
+                <li>Validated and standardized wildfire data collected across New England to support environmental research and public awareness.</li>
+              </ul>
+            </div>
           </article>
-          <article>
-            <p class="timeline-date">June 2026 - August 2026 &middot; Remote</p>
-            <h3>Software Developer Intern</h3>
-            <p class="organization">Bighelp for Education</p>
-            <ul class="detail-list">
-              <li>Modernized a nonprofit website using PHP, HTML/CSS, Python, and SQL while reviewing and testing AI-assisted code.</li>
-              <li>Reviewed, functionally tested, and debugged 25 AI-generated code changes to improve software reliability and quality.</li>
-              <li>Collaborated in a four-developer team to coordinate tasks, track progress, and deliver project milestones with technical mentors.</li>
-            </ul>
+
+          <article class="experience-entry">
+            <p class="meta">Jun 2026 &ndash; Aug 2026<br>Remote</p>
+            <div>
+              <h3>Software Developer Intern</h3>
+              <p class="role-company">Bighelp for Education</p>
+              <ul class="detail-list">
+                <li>Modernized a nonprofit website using PHP, HTML/CSS, Python, and SQL while reviewing and testing AI-assisted code.</li>
+                <li>Reviewed, functionally tested, and debugged 25 AI-generated code changes to improve software reliability and quality.</li>
+                <li>Worked in a four-developer team to coordinate tasks, track progress, and deliver milestones with technical mentors.</li>
+              </ul>
+            </div>
           </article>
-          <article>
-            <p class="timeline-date">November 2024 - February 2025 &middot; Pittsburgh, PA</p>
-            <h3>Research Assistant</h3>
-            <p class="organization">Carnegie Mellon University</p>
-            <ul class="detail-list">
-              <li>Evaluated learning outcomes for 30 students by helping design assessments and analyzing feedback on LLM-powered Socratic Books.</li>
-              <li>Developed more than eight data-driven recommendations to improve the LLM's Socratic questioning and personalized guidance.</li>
-            </ul>
+
+          <article class="experience-entry">
+            <p class="meta">Nov 2024 &ndash; Feb 2025<br>Pittsburgh, PA</p>
+            <div>
+              <h3>Research Assistant</h3>
+              <p class="role-company">Carnegie Mellon University</p>
+              <ul class="detail-list">
+                <li>Evaluated learning outcomes for 30 students by helping design assessments and analyzing feedback on LLM-powered Socratic Books.</li>
+                <li>Developed more than eight data-driven recommendations to improve the LLM&rsquo;s Socratic questioning and personalized guidance.</li>
+              </ul>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section container" id="projects">
-      <div class="section-heading">
-        <div>
+    <!-- SELECTED PROJECTS: these summaries link to the detailed blocks in portfolio.html. -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading">
           <p class="eyebrow">Selected work</p>
           <h2>Projects</h2>
+          <p>Three end-to-end projects focused on explainable decisions, reliable data collection, and software that can be inspected and tested.</p>
         </div>
-        <!-- Project-specific URLs are intentionally omitted because they are not listed on the resume. -->
-      </div>
 
-      <div class="featured-list">
-        <article class="featured-project">
-          <div class="project-art art-one" role="img" aria-label="Grant Intelligence Tracker visual placeholder">
-            <span>ETL + NLP</span>
-          </div>
-          <div class="project-copy">
-            <p class="project-number">July 2026 - September 2026 &middot; EcoServants</p>
-            <h3>Grant Intelligence Tracker</h3>
-            <p>Identifying and prioritizing high-potential funding opportunities for a nonprofit organization.</p>
-            <ul class="detail-list">
-              <li>Built a Python/Pandas ETL pipeline to clean, validate, and prepare more than 100,000 IRS nonprofit records across eight Northeastern states.</li>
-              <li>Developed an NLP matching system using TF-IDF and cosine similarity to score organizations against EcoServants' mission.</li>
-              <li>Created an interactive Streamlit dashboard with transparent scoring and Plotly visualizations.</li>
-            </ul>
-            <ul class="tags" aria-label="Technologies used">
-              <li>Python</li><li>Pandas</li><li>NLP</li><li>Streamlit</li><li>Plotly</li>
-            </ul>
-          </div>
-        </article>
+        <div class="project-list">
+          <article class="project-preview">
+            <p class="meta">Data engineering<br>NLP &amp; dashboards</p>
+            <div>
+              <h3><a href="portfolio.html#grant-intelligence">Grant Intelligence Platform</a></h3>
+              <p>Cleaned IRS nonprofit data, screened likely grantmakers, measured mission similarity, and ranked prospects with an explainable 100-point scoring model.</p>
+              <a class="text-link" href="portfolio.html#grant-intelligence">Read the case study <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
 
-        <article class="featured-project">
-          <div class="project-art art-two" role="img" aria-label="Wildfire Smoke Web Scraper visual placeholder">
-            <span>WEB SCRAPER</span>
-          </div>
-          <div class="project-copy">
-            <p class="project-number">June 2026 - September 2026 &middot; EcoServants</p>
-            <h3>Wildfire Smoke Web Scraper</h3>
-            <p>Supporting public health through automated environmental data collection.</p>
-            <ul class="detail-list">
-              <li>Automated the collection of more than 30 wildfire smoke records across the Northeastern U.S. and Canada by consolidating data from more than 25 sources.</li>
-              <li>Standardized fire locations, air-quality measurements, health advisories, dates, and source links into 29 fields with CSV, JSON, and HTML exports.</li>
-              <li>Improved reliability with caching, request throttling, error handling, and automated tests for inconsistent source data.</li>
-            </ul>
-            <ul class="tags" aria-label="Technologies used">
-              <li>Python</li><li>Web scraping</li><li>CSV</li><li>JSON</li><li>Testing</li>
-            </ul>
-          </div>
-        </article>
+          <article class="project-preview">
+            <p class="meta">Computer vision<br>Video analysis</p>
+            <div>
+              <h3><a href="portfolio.html#nfl-detector">NFL Pre-Snap Penalty Detector</a></h3>
+              <p>Combined YOLOv8 detections, player tracking, team-color heuristics, snap estimation, OCR, and rule-based logic to flag four suspected pre-snap penalties.</p>
+              <a class="text-link" href="portfolio.html#nfl-detector">Read the case study <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
 
-        <article class="featured-project">
-          <div class="project-art art-three" role="img" aria-label="AI NFL Penalty Detector visual placeholder">
-            <span>COMPUTER VISION</span>
-          </div>
-          <div class="project-copy">
-            <p class="project-number">September 2025 - December 2025 &middot; ECE student project</p>
-            <h3>AI NFL Penalty Detector</h3>
-            <p>Automating NFL pre-snap penalty detection from broadcast footage.</p>
-            <ul class="detail-list">
-              <li>Analyzed more than 50 broadcast clips with a Python/OpenCV pipeline and YOLOv8 detection to identify and track players.</li>
-              <li>Tracked as many as 22 players per play using movement and uniform-color classification, HSV segmentation, and snap-detection logic.</li>
-              <li>Automated detection of four penalty types: false starts, offsides, too-many-men violations, and delay of game.</li>
-            </ul>
-            <ul class="tags" aria-label="Technologies used">
-              <li>Python</li><li>OpenCV</li><li>YOLOv8</li><li>Computer vision</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="featured-project">
-          <div class="project-art art-four" role="img" aria-label="NBA Team Simulation visual placeholder">
-            <span>SIMULATION</span>
-          </div>
-          <div class="project-copy">
-            <p class="project-number">November 2024 - December 2024 &middot; 15-112 term project</p>
-            <h3>NBA Team Simulation</h3>
-            <p>Simulating realistic NBA seasons through programming and data modeling.</p>
-            <ul class="detail-list">
-              <li>Developed a Python program that simulates NBA seasons using a database of 50 players and 30 teams.</li>
-              <li>Used SQL, CSV files, and Pandas to organize and query player statistics, rosters, schedules, and results.</li>
-              <li>Built an interactive CMU Graphics interface with dynamic visuals, sound effects, and user-friendly controls.</li>
-            </ul>
-            <ul class="tags" aria-label="Technologies used">
-              <li>Python</li><li>SQL</li><li>Pandas</li><li>CMU Graphics</li>
-            </ul>
-          </div>
-        </article>
+          <article class="project-preview">
+            <p class="meta">Web data collection<br>Research tooling</p>
+            <div>
+              <h3><a href="portfolio.html#wildfire-scraper">Northeast Wildfire Smoke Scraper</a></h3>
+              <p>Collected official wildfire-smoke pages, extracted a consistent 29-field research record, preserved source provenance, and exported CSV, JSON, and HTML reports.</p>
+              <a class="text-link" href="portfolio.html#wildfire-scraper">Read the case study <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="contact-strip">
-      <div class="container contact-strip-inner">
-        <div>
-          <p class="eyebrow">Summer 2027 opportunities</p>
-          <h2>Open to data science, software engineering, and AI/ML internships.</h2>
-        </div>
-        <div class="contact-actions">
-          <a class="button button-light" href="mailto:vishalramesh.work@gmail.com">Email me <span aria-hidden="true">&nearr;</span></a>
-          <a class="button button-outline-light" href="tel:+15086189026">Call me</a>
-        </div>
+    <!-- CONTACT: update the email here and in the footer if it changes. -->
+    <section class="contact-line">
+      <div class="container contact-line-inner">
+        <h2>Open to Summer 2027 data science, software engineering, and AI/ML internships.</h2>
+        <a class="primary-link" href="mailto:vishalramesh.work@gmail.com">Email me</a>
       </div>
     </section>
   </main>
@@ -244,11 +162,11 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>&copy; 2026 Vishal Ramesh</p>
-      <div class="social-links">
-        <a href="https://github.com/vishalr302" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="mailto:vishalramesh.work@gmail.com">Email</a>
-        <a href="tel:+15086189026">(508) 618-9026</a>
-      </div>
+      <ul class="inline-links">
+        <li><a href="https://github.com/vishalr302" target="_blank" rel="noreferrer">GitHub</a></li>
+        <li><a href="mailto:vishalramesh.work@gmail.com">Email</a></li>
+        <li><a href="tel:+15086189026">(508) 618-9026</a></li>
+      </ul>
     </div>
   </footer>
 </body>

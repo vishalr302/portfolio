@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Learn more about Your Name and their work.">
-  <title>Your Name | About</title>
+  <meta name="description" content="About Vishal Ramesh, a Statistics and Machine Learning student at Carnegie Mellon University.">
+  <title>Vishal Ramesh | About</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- SITE NAVIGATION: edit the same links in index.html, about.html, and portfolio.html. -->
   <header class="site-header">
     <nav class="nav container" aria-label="Primary navigation">
-      <a class="brand" href="index.html">Your Name<span>.</span></a>
+      <a class="brand" href="index.html">Vishal Ramesh</a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a class="active" aria-current="page" href="about.html">About</a></li>
@@ -20,92 +21,89 @@
   </header>
 
   <main>
-    <section class="page-intro container">
-      <p class="eyebrow">About me</p>
-      <h1>A short headline about who you are and how you approach your work.</h1>
+    <!-- ABOUT INTRO: add personal background here later if you want. No hobbies were invented. -->
+    <section class="intro compact container">
+      <p class="eyebrow">About</p>
+      <h1>I work where data, software, and practical problem-solving meet.</h1>
+      <p class="lead">I am pursuing a B.S. in Statistics and Machine Learning at Carnegie Mellon University. My experience includes nonprofit data analysis, software development, LLM-supported education research, NLP, and computer vision.</p>
     </section>
 
-    <section class="section container about-grid">
-      <div class="about-portrait" role="img" aria-label="Profile image placeholder">
-        <span>Add your photo</span>
-      </div>
-      <div class="prose">
-        <h2>My story</h2>
-        <!-- Replace these paragraphs with your own biography. -->
-        <p>I’m a developer based in Your City. This is a good place to explain how you got started, what you enjoy building, and what motivates you.</p>
-        <p>Keep the writing personal and specific. You might describe your working style, the types of teams you enjoy, or an experience that shaped your approach.</p>
-        <p>Outside of work, add a few interests that help visitors get to know the person behind the projects.</p>
-        <a class="text-link" href="portfolio.html">Explore my work <span aria-hidden="true">→</span></a>
-      </div>
-    </section>
-
-    <section class="section section-tinted">
-      <div class="container two-column">
+    <!-- BACKGROUND: each paragraph can be edited or removed independently. -->
+    <section class="section">
+      <div class="container split">
         <div>
-          <p class="eyebrow">Capabilities</p>
-          <h2>What I can help with</h2>
+          <p class="eyebrow">Background</p>
+          <h2>What I have worked on</h2>
         </div>
-        <div class="services-list">
-          <article>
-            <span>01</span>
-            <div><h3>Web development</h3><p>Describe the websites or applications you build and the technologies you prefer.</p></div>
-          </article>
-          <article>
-            <span>02</span>
-            <div><h3>UI &amp; UX</h3><p>Explain your approach to clear interfaces, thoughtful interactions, and accessible experiences.</p></div>
-          </article>
-          <article>
-            <span>03</span>
-            <div><h3>Collaboration</h3><p>Highlight how you work with clients, designers, developers, or cross-functional teams.</p></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section container two-column">
-      <div>
-        <p class="eyebrow">Experience</p>
-        <h2>Where I’ve worked</h2>
-      </div>
-      <div class="timeline">
-        <!-- Duplicate or remove experience entries as needed. -->
-        <article>
-          <p class="timeline-date">2024 — Present</p>
-          <h3>Your current role</h3>
-          <p>Your Company · Add one sentence about your responsibilities or impact.</p>
-        </article>
-        <article>
-          <p class="timeline-date">2022 — 2024</p>
-          <h3>Your previous role</h3>
-          <p>Previous Company · Add one sentence about what you learned or delivered.</p>
-        </article>
-        <article>
-          <p class="timeline-date">2020 — 2022</p>
-          <h3>Another role or education</h3>
-          <p>Organization · Include education, freelance work, or another relevant milestone.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="contact-strip">
-      <div class="container contact-strip-inner">
         <div>
-          <p class="eyebrow">Want to work together?</p>
-          <h2>I’d love to hear from you.</h2>
+          <p>At EcoServants, I built data tools for two different research problems: identifying potential nonprofit funders from large IRS datasets and organizing evidence about wildfire smoke events affecting the Northeast.</p>
+          <p>At Bighelp for Education, I worked on a nonprofit website with PHP, HTML/CSS, Python, and SQL. I also reviewed, tested, and debugged AI-generated code changes as part of a four-developer team.</p>
+          <p>As a research assistant at Carnegie Mellon, I helped evaluate LLM-powered Socratic Books for a group of 30 students and translated feedback into more than eight recommendations for improving the learning experience.</p>
+          <!-- OPTIONAL PERSONAL PARAGRAPH: add interests, motivation, or a short story here later. -->
         </div>
-        <a class="button button-light" href="mailto:hello@example.com">Get in touch <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <!-- WORKING STYLE: these points are based on the resume and completed projects. -->
+    <section class="section">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Approach</p>
+          <h2>How I work</h2>
+        </div>
+        <ul class="detail-list">
+          <li>I break open-ended problems into readable pipelines with clear inputs, transformations, and outputs.</li>
+          <li>I prefer explainable methods when a user needs to understand why a result was produced.</li>
+          <li>I include validation, tests, and explicit limitations so a prototype is honest about what it can and cannot do.</li>
+          <li>I am comfortable working with mentors and teammates, reviewing code, tracking progress, and turning feedback into revisions.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- QUICK DETAILS: use one <div class="fact"> for every row you want to show. -->
+    <section class="section">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Details</p>
+          <h2>At a glance</h2>
+        </div>
+        <dl class="facts">
+          <div class="fact">
+            <dt>School</dt>
+            <dd>Carnegie Mellon University</dd>
+          </div>
+          <div class="fact">
+            <dt>Degree</dt>
+            <dd>B.S. in Statistics and Machine Learning, expected May 2028</dd>
+          </div>
+          <div class="fact">
+            <dt>Interests</dt>
+            <dd>Data science, software engineering, artificial intelligence, machine learning, NLP, and computer vision</dd>
+          </div>
+          <div class="fact">
+            <dt>Contact</dt>
+            <dd><a class="text-link" href="mailto:vishalramesh.work@gmail.com">vishalramesh.work@gmail.com</a></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="contact-line">
+      <div class="container contact-line-inner">
+        <h2>See how I applied these skills across three complete project case studies.</h2>
+        <a class="primary-link" href="portfolio.html">View portfolio</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 Your Name</p>
-      <div class="social-links">
-        <a href="https://github.com/your-username" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="mailto:hello@example.com">Email</a>
-      </div>
+      <p>&copy; 2026 Vishal Ramesh</p>
+      <ul class="inline-links">
+        <li><a href="https://github.com/vishalr302" target="_blank" rel="noreferrer">GitHub</a></li>
+        <li><a href="mailto:vishalramesh.work@gmail.com">Email</a></li>
+        <li><a href="tel:+15086189026">(508) 618-9026</a></li>
+      </ul>
     </div>
   </footer>
 </body>
