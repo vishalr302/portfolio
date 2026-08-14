@@ -36,15 +36,16 @@ The most useful settings are at the top of `styles.css`:
 
 ```css
 :root {
-  --background: #fbfbf8;
-  --text: #17201b;
-  --muted: #5e6962;
-  --line: #d9dfda;
-  --accent: #176443;
+  --background: #f7f9fc;
+  --text: #16213e;
+  --accent: #2959c7;
+  --green: #167a59;
+  --purple: #7048b8;
+  --orange: #bd5b24;
 }
 ```
 
-Changing these values updates all three pages. The design intentionally uses one accent color, a neutral background, whitespace, and thin dividers instead of many cards or decorative sections.
+Changing these values updates all three pages. Color is used for navigation, section bands, and project identity while the layout remains based on whitespace and thin dividers instead of many cards.
 
 ## Repository links
 
