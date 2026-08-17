@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About Vishal Ramesh, a Statistics and Machine Learning student at Carnegie Mellon University.">
+  <meta name="description" content="About Vishal Ramesh, including skills, technologies, and contact information.">
   <title>Vishal Ramesh | About</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- SITE NAVIGATION: edit the same links in index.html, about.html, and portfolio.html. -->
+  <!-- Edit the same navigation links in index.html, about.html, and portfolio.html. -->
   <header class="site-header">
     <nav class="nav container" aria-label="Primary navigation">
       <a class="brand" href="index.html">Vishal Ramesh</a>
@@ -20,94 +20,53 @@
     </nav>
   </header>
 
-  <main>
-    <!-- ABOUT INTRO: add personal background here later if you want. No hobbies were invented. -->
-    <section class="intro compact container">
-      <p class="eyebrow">About</p>
-      <h1>I work where data, software, and practical problem-solving meet.</h1>
-      <p class="lead">I am pursuing a B.S. in Statistics and Machine Learning at Carnegie Mellon University. My experience includes nonprofit data analysis, software development, LLM-supported education research, NLP, and computer vision.</p>
-      <nav class="quick-nav" aria-label="Jump to a section on this page">
-        <span>On this page:</span>
-        <a href="#background">Background</a>
-        <a href="#approach">Approach</a>
-        <a href="#details">Details</a>
-      </nav>
-    </section>
+  <main class="about-page container">
+    <p class="eyebrow">About</p>
+    <h1>About me</h1>
+    <p class="lead">I am a Statistics and Machine Learning student at Carnegie Mellon University, expected to graduate in May 2028. I am interested in data science, software engineering, artificial intelligence, natural language processing, and computer vision.</p>
+    <p>My work includes nonprofit data analysis, web development, LLM-supported education research, and end-to-end projects built from real-world data. I enjoy creating software that is understandable, testable, and useful to the people working with it.</p>
 
-    <!-- BACKGROUND: each paragraph can be edited or removed independently. -->
-    <section class="section section-blue" id="background">
-      <div class="container split">
-        <div>
-          <p class="eyebrow">Background</p>
-          <h2>What I have worked on</h2>
-        </div>
-        <div>
-          <p>At EcoServants, I built data tools for two different research problems: identifying potential nonprofit funders from large IRS datasets and organizing evidence about wildfire smoke events affecting the Northeast.</p>
-          <p>At Bighelp for Education, I worked on a nonprofit website with PHP, HTML/CSS, Python, and SQL. I also reviewed, tested, and debugged AI-generated code changes as part of a four-developer team.</p>
-          <p>As a research assistant at Carnegie Mellon, I helped evaluate LLM-powered Socratic Books for a group of 30 students and translated feedback into more than eight recommendations for improving the learning experience.</p>
-          <!-- OPTIONAL PERSONAL PARAGRAPH: add interests, motivation, or a short story here later. -->
-        </div>
+    <!-- Add, change, or delete an entire skill group below. -->
+    <div class="skills-list">
+      <div class="skill-group skill-blue">
+        <h2>Programming languages</h2>
+        <p>Python, Java, C++, SQL, HTML/CSS, SystemVerilog, and MATLAB</p>
       </div>
-    </section>
 
-    <!-- WORKING STYLE: these points are based on the resume and completed projects. -->
-    <section class="section section-purple" id="approach">
-      <div class="container split">
-        <div>
-          <p class="eyebrow">Approach</p>
-          <h2>How I work</h2>
-        </div>
-        <ul class="detail-list">
-          <li>I break open-ended problems into readable pipelines with clear inputs, transformations, and outputs.</li>
-          <li>I prefer explainable methods when a user needs to understand why a result was produced.</li>
-          <li>I include validation, tests, and explicit limitations so a prototype is honest about what it can and cannot do.</li>
-          <li>I am comfortable working with mentors and teammates, reviewing code, tracking progress, and turning feedback into revisions.</li>
-        </ul>
+      <div class="skill-group skill-green">
+        <h2>Data and machine learning</h2>
+        <p>Pandas, NumPy, scikit-learn, TF-IDF, natural language processing, data cleaning, data validation, and statistical analysis</p>
       </div>
-    </section>
 
-    <!-- QUICK DETAILS: use one <div class="fact"> for every row you want to show. -->
-    <section class="section section-orange" id="details">
-      <div class="container split">
-        <div>
-          <p class="eyebrow">Details</p>
-          <h2>At a glance</h2>
-        </div>
-        <dl class="facts">
-          <div class="fact">
-            <dt>School</dt>
-            <dd>Carnegie Mellon University</dd>
-          </div>
-          <div class="fact">
-            <dt>Degree</dt>
-            <dd>B.S. in Statistics and Machine Learning, expected May 2028</dd>
-          </div>
-          <div class="fact">
-            <dt>Interests</dt>
-            <dd>Data science, software engineering, artificial intelligence, machine learning, NLP, and computer vision</dd>
-          </div>
-          <div class="fact">
-            <dt>Contact</dt>
-            <dd><a class="text-link" href="mailto:vishalramesh.work@gmail.com">vishalramesh.work@gmail.com</a></dd>
-          </div>
-        </dl>
+      <div class="skill-group skill-purple">
+        <h2>Computer vision and applications</h2>
+        <p>OpenCV, YOLOv8, object tracking, video processing, Streamlit, Plotly, and Tesseract OCR</p>
       </div>
-    </section>
 
-    <section class="contact-line">
-      <div class="container contact-line-inner">
-        <h2>See how I applied these skills across three complete project case studies.</h2>
-        <a class="primary-link" href="portfolio.html">View portfolio</a>
+      <div class="skill-group skill-orange">
+        <h2>Development tools</h2>
+        <p>Git, GitHub, Linux, VS Code, Excel, Codex, and Claude</p>
       </div>
-    </section>
+    </div>
+
+    <h2 class="contact-heading">Contact</h2>
+    <nav class="about-links" aria-label="Contact and profile links">
+      <a class="about-link contact-email" href="mailto:vishalramesh.work@gmail.com">Email me</a>
+      <a class="about-link contact-github" href="https://github.com/vishalr302" target="_blank" rel="noreferrer">GitHub</a>
+
+      <!--
+        LINKEDIN: Replace the span below with this link after adding your URL:
+        <a class="about-link contact-linkedin" href="YOUR-LINKEDIN-URL" target="_blank" rel="noreferrer">LinkedIn</a>
+      -->
+      <span class="about-link contact-linkedin linkedin-placeholder">LinkedIn - add profile URL</span>
+    </nav>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>&copy; 2026 Vishal Ramesh</p>
       <ul class="inline-links">
-        <li><a href="https://github.com/vishalr302" target="_blank" rel="noreferrer">GitHub</a></li>
-        <li><a href="mailto:vishalramesh.work@gmail.com">Email</a></li>
+        <li><a href="mailto:vishalramesh.work@gmail.com">vishalramesh.work@gmail.com</a></li>
         <li><a href="tel:+15086189026">(508) 618-9026</a></li>
       </ul>
     </div>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Project case studies by Vishal Ramesh covering data engineering, NLP, computer vision, and web data collection.">
+  <meta name="description" content="Project case studies by Vishal Ramesh covering data engineering, NLP, computer vision, web data collection, and interactive simulation.">
   <title>Vishal Ramesh | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -24,12 +24,13 @@
     <!-- PAGE INTRO: keep this broad; the detailed text belongs in each project below. -->
     <section class="intro compact container" id="portfolio-top">
       <p class="eyebrow">Project portfolio</p>
-      <h1>Three practical systems built around real data.</h1>
+      <h1>Four practical systems built around real data.</h1>
       <p class="lead">These case studies explain the problem, my approach, the implementation, what each system can do, and where its limits are. The details come from the project source code, tests, READMEs, and project briefs.</p>
       <nav class="project-index" aria-label="Jump to a project">
         <a href="#grant-intelligence">Grant Intelligence Platform</a>
         <a href="#nfl-detector">NFL Penalty Detector</a>
         <a href="#wildfire-scraper">Wildfire Smoke Scraper</a>
+        <a href="#nba-team-builder">NBA Team Builder</a>
       </nav>
     </section>
 
@@ -73,6 +74,33 @@
               <li><strong>Explainable ranking.</strong> The 100-point model combines funder type (25 points), mission category (20), Northeast geography (15), NTEE alignment (15), financial codes (10), and TF-IDF similarity (15). Scores of 70 or higher are High Priority, 45&ndash;69.9 are Medium, and lower scores are Low. Each record includes component scores and a plain-language reason for selection.</li>
               <li><strong>Interactive dashboard.</strong> Streamlit provides multi-file upload, sample-data fallback, organization search, state/category/priority filters, a similarity threshold, five summary metrics, four Plotly charts, a ranked table, and CSV download. The charts and table all use the same active filter state.</li>
             </ol>
+          </section>
+
+          <!-- PROJECT IMAGES: add files to project-images/, then follow each IMAGE SLOT comment. -->
+          <section class="project-media">
+            <h3>Project images</h3>
+            <div class="project-gallery">
+              <figure class="project-image-slot">
+                <!-- IMAGE SLOT: replace the placeholder div below with:
+                <img src="project-images/grant-dashboard.png" alt="Grant Intelligence dashboard overview">
+                -->
+                <div class="image-placeholder" role="img" aria-label="Placeholder for a Grant Intelligence dashboard image">
+                  <strong>Image 1</strong>
+                  <span>Dashboard overview</span>
+                </div>
+                <figcaption>Suggested image: the dashboard, filters, and summary metrics.</figcaption>
+              </figure>
+              <figure class="project-image-slot">
+                <!-- IMAGE SLOT: replace the placeholder div below with:
+                <img src="project-images/grant-results.png" alt="Ranked grant prospects and scoring details">
+                -->
+                <div class="image-placeholder" role="img" aria-label="Placeholder for ranked Grant Intelligence results">
+                  <strong>Image 2</strong>
+                  <span>Ranked prospect results</span>
+                </div>
+                <figcaption>Suggested image: the ranked table, charts, or score explanation.</figcaption>
+              </figure>
+            </div>
           </section>
 
           <section>
@@ -147,6 +175,33 @@
             </ol>
           </section>
 
+          <!-- PROJECT IMAGES: add files to project-images/, then follow each IMAGE SLOT comment. -->
+          <section class="project-media">
+            <h3>Project images</h3>
+            <div class="project-gallery">
+              <figure class="project-image-slot">
+                <!-- IMAGE SLOT: replace the placeholder div below with:
+                <img src="project-images/nfl-detection.png" alt="NFL video frame with player detections and line of scrimmage">
+                -->
+                <div class="image-placeholder" role="img" aria-label="Placeholder for an annotated NFL detection frame">
+                  <strong>Image 1</strong>
+                  <span>Annotated play frame</span>
+                </div>
+                <figcaption>Suggested image: player detections, tracks, or line-of-scrimmage annotation.</figcaption>
+              </figure>
+              <figure class="project-image-slot">
+                <!-- IMAGE SLOT: replace the placeholder div below with:
+                <img src="project-images/nfl-results.png" alt="NFL penalty detector analysis results">
+                -->
+                <div class="image-placeholder" role="img" aria-label="Placeholder for NFL penalty analysis results">
+                  <strong>Image 2</strong>
+                  <span>Penalty analysis output</span>
+                </div>
+                <figcaption>Suggested image: a detected event, structured result, or test output.</figcaption>
+              </figure>
+            </div>
+          </section>
+
           <section>
             <div class="case-columns">
               <div>
@@ -219,6 +274,33 @@
             </ol>
           </section>
 
+          <!-- PROJECT IMAGES: add files to project-images/, then follow each IMAGE SLOT comment. -->
+          <section class="project-media">
+            <h3>Project images</h3>
+            <div class="project-gallery">
+              <figure class="project-image-slot">
+                <!-- IMAGE SLOT: replace the placeholder div below with:
+                <img src="project-images/wildfire-table.png" alt="Wildfire smoke records in the generated HTML table">
+                -->
+                <div class="image-placeholder" role="img" aria-label="Placeholder for the Wildfire Smoke Scraper dataset">
+                  <strong>Image 1</strong>
+                  <span>Generated research table</span>
+                </div>
+                <figcaption>Suggested image: the generated HTML table, CSV, or structured records.</figcaption>
+              </figure>
+              <figure class="project-image-slot">
+                <!-- IMAGE SLOT: replace the placeholder div below with:
+                <img src="project-images/wildfire-evidence.png" alt="Wildfire source evidence and extracted smoke details">
+                -->
+                <div class="image-placeholder" role="img" aria-label="Placeholder for wildfire source evidence">
+                  <strong>Image 2</strong>
+                  <span>Source and evidence output</span>
+                </div>
+                <figcaption>Suggested image: source evidence, extraction output, or pipeline results.</figcaption>
+              </figure>
+            </div>
+          </section>
+
           <section>
             <div class="case-columns">
               <div>
@@ -248,6 +330,112 @@
       </div>
     </article>
     <!-- PROJECT 3 END -->
+
+    <!-- PROJECT 4 START: copy, edit, or delete this complete article block. -->
+    <article class="project-case" id="nba-team-builder">
+      <div class="container">
+        <header class="project-header">
+          <p class="eyebrow"><span class="project-title-number">04</span> &middot; Interactive simulation and data application &middot; Nov&ndash;Dec 2024</p>
+          <h2 class="project-title">NBA Team Builder</h2>
+          <p class="lead">A Python application that lets users build an eight-player roster from real 2023&ndash;24 NBA data and simulate a season against an actual team schedule.</p>
+          <div class="project-links">
+            <a href="https://youtu.be/UJOr6nm6jaA" target="_blank" rel="noreferrer">Watch video demo <span aria-hidden="true">&nearr;</span></a>
+            <a href="https://drive.google.com/drive/folders/1CcS94qqJC2vU0yQvXv21-XZ-fWyJkY0E" target="_blank" rel="noreferrer">View project files <span aria-hidden="true">&nearr;</span></a>
+          </div>
+          <p class="small-note">15-112 term project completed at Carnegie Mellon University.</p>
+        </header>
+
+        <div class="case-content">
+          <section>
+            <h3>Problem</h3>
+            <p>Comparing NBA players across teams is useful, but a statistics table alone does not show how a custom roster might perform together. I wanted to turn real player and opponent data into an interactive experience where a user could make basketball decisions, choose a franchise and roster, and immediately see a simulated season result.</p>
+          </section>
+
+          <section>
+            <h3>My approach</h3>
+            <p>I built the project as a multi-screen CMU Graphics application. I used Pandas to help organize and prepare the player data, then stored the cleaned information in CSV files for the application. The program loads per-game player statistics and team schedules, converts each roster into estimated team production, and compares those metrics with each scheduled opponent to generate game-by-game results.</p>
+            <p>The included player dataset contains 571 rows, 569 unique players, all 30 NBA team codes, and the five standard positions. It includes points, rebounds, assists, steals, blocks, shooting statistics, playing time, and other 2023&ndash;24 per-game fields from Basketball-Reference.</p>
+          </section>
+
+          <section>
+            <h3>What I implemented</h3>
+            <ol class="implementation-list">
+              <li><strong>Structured basketball data.</strong> I used Pandas during data preparation and worked with CSV files containing player identities, positions, team assignments, playing time, shooting, scoring, rebounding, passing, steals, and blocks. The running application uses Python&rsquo;s CSV reader to turn the fields it needs into player records.</li>
+              <li><strong>Difficulty and franchise selection.</strong> Users can choose Easy, Medium, Hard, or a custom difficulty multiplier, then select one of 30 NBA teams. Team colors and logo assets carry the selected franchise through the rest of the interface.</li>
+              <li><strong>Interactive roster building.</strong> The player screen organizes choices by point guard, shooting guard, small forward, power forward, and center. Users select eight unique players: five starters and three bench players. Hover cards show a player photo and per-game points, rebounds, assists, blocks, and steals.</li>
+              <li><strong>Minute-adjusted team statistics.</strong> The simulator assigns starters 33&ndash;39 minutes and bench players 10&ndash;16 minutes, scales each player&rsquo;s per-game production to those minutes, and totals the roster&rsquo;s points, rebounds, assists, blocks, and steals.</li>
+              <li><strong>Season simulation.</strong> For every game on the chosen team&rsquo;s schedule, the program compares the custom roster&rsquo;s five aggregate metrics with the opponent&rsquo;s values. It converts those differences into a bounded win probability, applies the chosen difficulty, and uses controlled randomness to produce a win or loss.</li>
+              <li><strong>Results and feedback.</strong> The final screen reports the overall record, team per-game totals, every scheduled opponent and game result, the selected starting lineup and bench, the leading scorer, best passer, and best defender, plus feedback based on the number of wins.</li>
+              <li><strong>Interactive presentation.</strong> I used CMU Graphics for navigation, buttons, scrolling, hover behavior, images, team-themed visuals, and results screens. Multiple audio cues provide feedback as the user moves through the team-building flow.</li>
+            </ol>
+          </section>
+
+          <!-- PROJECT IMAGES: the NBA gallery intentionally has three slots. -->
+          <section class="project-media">
+            <h3>Project images</h3>
+            <div class="project-gallery project-gallery-three">
+              <figure class="project-image-slot">
+                <!-- IMAGE SLOT: replace the placeholder div below with:
+                <img src="project-images/nba-team-selection.png" alt="NBA Team Builder difficulty or franchise selection screen">
+                -->
+                <div class="image-placeholder" role="img" aria-label="Placeholder for NBA Team Builder setup screen">
+                  <strong>Image 1</strong>
+                  <span>Difficulty and team selection</span>
+                </div>
+                <figcaption>Suggested image: difficulty settings or the 30-team selection screen.</figcaption>
+              </figure>
+              <figure class="project-image-slot">
+                <!-- IMAGE SLOT: replace the placeholder div below with:
+                <img src="project-images/nba-roster-builder.png" alt="NBA Team Builder player selection screen and roster">
+                -->
+                <div class="image-placeholder" role="img" aria-label="Placeholder for NBA Team Builder roster selection">
+                  <strong>Image 2</strong>
+                  <span>Eight-player roster builder</span>
+                </div>
+                <figcaption>Suggested image: player choices, hover statistics, or the selected roster.</figcaption>
+              </figure>
+              <figure class="project-image-slot">
+                <!-- IMAGE SLOT: replace the placeholder div below with:
+                <img src="project-images/nba-season-results.png" alt="NBA Team Builder simulated season results">
+                -->
+                <div class="image-placeholder" role="img" aria-label="Placeholder for NBA Team Builder season results">
+                  <strong>Image 3</strong>
+                  <span>Simulated season results</span>
+                </div>
+                <figcaption>Suggested image: final record, team statistics, or game-by-game results.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section>
+            <div class="case-columns">
+              <div>
+                <h3>Key capabilities</h3>
+                <ul class="detail-list">
+                  <li>Builds a custom eight-player roster from real NBA data.</li>
+                  <li>Supports all 30 teams and team-specific schedules.</li>
+                  <li>Offers three preset difficulties and a custom slider.</li>
+                  <li>Explains the roster through player and team statistics.</li>
+                  <li>Produces a complete game-by-game season record.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Validation and limitations</h3>
+                <p>I reviewed the application through its full interactive flow and recorded a video demonstration. The data files also provide a structured way to check that player values, team codes, positions, and schedule inputs are being loaded as expected.</p>
+                <p class="limitation">This is an educational simulation, not a predictive NBA model. Results use a rule-based probability formula and randomness, and they do not model injuries, trades, lineup chemistry, defense by matchup, or possession-level play. The data is fixed to the 2023&ndash;24 season, and the application depends on local schedule, logo, player-image, and audio assets.</p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h3>Technologies</h3>
+            <p class="stack">Python, Pandas, CMU Graphics, CSV data processing, Basketball-Reference data, data modeling, interactive graphics, and audio integration.</p>
+          </section>
+          <a class="back-link" href="#portfolio-top">Back to project list <span aria-hidden="true">&uarr;</span></a>
+        </div>
+      </div>
+    </article>
+    <!-- PROJECT 4 END -->
 
     <section class="contact-line">
       <div class="container contact-line-inner">

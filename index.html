@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- SITE NAVIGATION: edit the same links in index.html, about.html, and portfolio.html. -->
+  <!-- Edit the same navigation links in index.html, about.html, and portfolio.html. -->
   <header class="site-header">
     <nav class="nav container" aria-label="Primary navigation">
       <a class="brand" href="index.html">Vishal Ramesh</a>
@@ -20,157 +20,32 @@
     </nav>
   </header>
 
-  <main>
-    <!-- HOME INTRO: this is the main text recruiters see first. -->
-    <section class="intro container">
-      <p class="eyebrow">Statistics &amp; Machine Learning at Carnegie Mellon</p>
-      <h1>Hi, I&rsquo;m Vishal Ramesh.</h1>
-      <p class="lead">I build practical software and data systems across data engineering, natural language processing, and computer vision. I am a rising junior seeking a Summer 2027 internship in data science, software engineering, AI/ML, or a related technology role.</p>
-      <div class="button-row">
-        <a class="primary-link" href="portfolio.html">View my projects <span aria-hidden="true">&rarr;</span></a>
-        <a class="secondary-link" href="mailto:vishalramesh.work@gmail.com">vishalramesh.work@gmail.com</a>
-      </div>
-      <nav class="quick-nav" aria-label="Jump to a section on this page">
-        <span>On this page:</span>
-        <a href="#profile">Profile</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-      </nav>
-    </section>
+  <!-- The Home page is intentionally one simple content column. -->
+  <main class="simple-home container">
+    <p class="eyebrow">Statistics &amp; Machine Learning at Carnegie Mellon</p>
+    <h1>Hi, I&rsquo;m Vishal Ramesh.</h1>
+    <p class="lead">I build practical software and data systems across data engineering, natural language processing, and computer vision. I am a rising junior seeking a Summer 2027 internship in data science, software engineering, AI/ML, or a related technology role.</p>
 
-    <!-- PROFILE DETAILS: keep these as short label/value rows. -->
-    <section class="section section-blue" id="profile">
-      <div class="container split">
-        <div>
-          <p class="eyebrow">Profile</p>
-          <h2>Background</h2>
-        </div>
-        <dl class="facts">
-          <div class="fact">
-            <dt>Education</dt>
-            <dd>B.S. in Statistics and Machine Learning, Carnegie Mellon University, expected May 2028.</dd>
-          </div>
-          <div class="fact">
-            <dt>Location</dt>
-            <dd>Mansfield, Massachusetts; studying in Pittsburgh, Pennsylvania.</dd>
-          </div>
-          <div class="fact">
-            <dt>Languages</dt>
-            <dd>Python, Java, C++, SQL, HTML/CSS, SystemVerilog, and MATLAB.</dd>
-          </div>
-          <div class="fact">
-            <dt>Tools</dt>
-            <dd>Pandas, NumPy, scikit-learn, OpenCV, YOLOv8, Streamlit, Plotly, Git, Linux, and Excel.</dd>
-          </div>
-        </dl>
-      </div>
-    </section>
+    <!-- Keep this About section to one or two short paragraphs. -->
+    <div class="home-about">
+      <h2>About me</h2>
+      <p>I am a Statistics and Machine Learning student at Carnegie Mellon University, expected to graduate in May 2028. I am interested in using data and software to solve clear, practical problems.</p>
+      <p>I enjoy learning new tools, working through open-ended questions, and turning ideas into explainable and testable software.</p>
+    </div>
 
-    <!-- EXPERIENCE: duplicate or delete an entire <article class="experience-entry"> block. -->
-    <section class="section section-purple" id="experience">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Experience</p>
-          <h2>Research, data, and software work</h2>
-        </div>
-
-        <div class="experience-list">
-          <article class="experience-entry">
-            <p class="meta">Jun 2026 &ndash; Aug 2026<br>Remote</p>
-            <div>
-              <h3>Data Analysis and Research Intern</h3>
-              <p class="role-company">EcoServants</p>
-              <ul class="detail-list">
-                <li>Delivered two open-source data projects with mentor guidance and weekly progress reviews.</li>
-                <li>Transformed more than 100,000 foundation records across eight Northeastern states into prioritized funding opportunities.</li>
-                <li>Validated and standardized wildfire data collected across New England to support environmental research and public awareness.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="experience-entry">
-            <p class="meta">Jun 2026 &ndash; Aug 2026<br>Remote</p>
-            <div>
-              <h3>Software Developer Intern</h3>
-              <p class="role-company">Bighelp for Education</p>
-              <ul class="detail-list">
-                <li>Modernized a nonprofit website using PHP, HTML/CSS, Python, and SQL while reviewing and testing AI-assisted code.</li>
-                <li>Reviewed, functionally tested, and debugged 25 AI-generated code changes to improve software reliability and quality.</li>
-                <li>Worked in a four-developer team to coordinate tasks, track progress, and deliver milestones with technical mentors.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="experience-entry">
-            <p class="meta">Nov 2024 &ndash; Feb 2025<br>Pittsburgh, PA</p>
-            <div>
-              <h3>Research Assistant</h3>
-              <p class="role-company">Carnegie Mellon University</p>
-              <ul class="detail-list">
-                <li>Evaluated learning outcomes for 30 students by helping design assessments and analyzing feedback on LLM-powered Socratic Books.</li>
-                <li>Developed more than eight data-driven recommendations to improve the LLM&rsquo;s Socratic questioning and personalized guidance.</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SELECTED PROJECTS: these summaries link to the detailed blocks in portfolio.html. -->
-    <section class="section section-green" id="projects">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Selected work</p>
-          <h2>Projects</h2>
-          <p>Three end-to-end projects focused on explainable decisions, reliable data collection, and software that can be inspected and tested.</p>
-        </div>
-
-        <div class="project-list">
-          <article class="project-preview">
-            <p class="meta">Data engineering<br>NLP &amp; dashboards</p>
-            <div>
-              <h3><a href="portfolio.html#grant-intelligence">Grant Intelligence Platform</a></h3>
-              <p>Cleaned IRS nonprofit data, screened likely grantmakers, measured mission similarity, and ranked prospects with an explainable 100-point scoring model.</p>
-              <a class="text-link" href="portfolio.html#grant-intelligence">Read the case study <span aria-hidden="true">&rarr;</span></a>
-            </div>
-          </article>
-
-          <article class="project-preview">
-            <p class="meta">Computer vision<br>Video analysis</p>
-            <div>
-              <h3><a href="portfolio.html#nfl-detector">NFL Pre-Snap Penalty Detector</a></h3>
-              <p>Combined YOLOv8 detections, player tracking, team-color heuristics, snap estimation, OCR, and rule-based logic to flag four suspected pre-snap penalties.</p>
-              <a class="text-link" href="portfolio.html#nfl-detector">Read the case study <span aria-hidden="true">&rarr;</span></a>
-            </div>
-          </article>
-
-          <article class="project-preview">
-            <p class="meta">Web data collection<br>Research tooling</p>
-            <div>
-              <h3><a href="portfolio.html#wildfire-scraper">Northeast Wildfire Smoke Scraper</a></h3>
-              <p>Collected official wildfire-smoke pages, extracted a consistent 29-field research record, preserved source provenance, and exported CSV, JSON, and HTML reports.</p>
-              <a class="text-link" href="portfolio.html#wildfire-scraper">Read the case study <span aria-hidden="true">&rarr;</span></a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT: update the email here and in the footer if it changes. -->
-    <section class="contact-line">
-      <div class="container contact-line-inner">
-        <h2>Open to Summer 2027 data science, software engineering, and AI/ML internships.</h2>
-        <a class="primary-link" href="mailto:vishalramesh.work@gmail.com">Email me</a>
-      </div>
-    </section>
+    <!-- These large links follow the simple style of the NFL quarterbacks page. -->
+    <nav class="home-links" aria-label="Portfolio and contact links">
+      <a class="home-link home-link-blue" href="portfolio.html">View my portfolio</a>
+      <a class="home-link home-link-green" href="https://github.com/vishalr302" target="_blank" rel="noreferrer">Visit my GitHub</a>
+      <a class="home-link home-link-purple" href="mailto:vishalramesh.work@gmail.com">Email me</a>
+    </nav>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>&copy; 2026 Vishal Ramesh</p>
       <ul class="inline-links">
-        <li><a href="https://github.com/vishalr302" target="_blank" rel="noreferrer">GitHub</a></li>
-        <li><a href="mailto:vishalramesh.work@gmail.com">Email</a></li>
+        <li><a href="mailto:vishalramesh.work@gmail.com">vishalramesh.work@gmail.com</a></li>
         <li><a href="tel:+15086189026">(508) 618-9026</a></li>
       </ul>
     </div>

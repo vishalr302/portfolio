@@ -2,15 +2,16 @@
 
 A simple, dependency-free HTML portfolio with three pages:
 
-- `index.html` - home, background, experience, and short project summaries
-- `about.html` - biography, working approach, and quick details
-- `portfolio.html` - detailed case studies for three projects
+- `index.html` - short introduction, two-paragraph biography, and large navigation links
+- `about.html` - background, skills, technologies, and contact/profile links
+- `portfolio.html` - detailed case studies for four projects
 - `styles.css` - all colors, spacing, type, and responsive behavior
+- `project-images/` - the screenshots and diagrams shown in the project galleries
 - `project-briefs/` - downloadable one-page project briefs
 
 ## Make a text change
 
-Open any HTML file in VS Code and edit the text between its tags. Helpful comments such as `HOME INTRO`, `EXPERIENCE`, and `PROJECT 1 START` mark the main editable areas.
+Open any HTML file in VS Code and edit the text between its tags. Helpful comments mark the Home-page biography, navigation links, and each portfolio project.
 
 For example:
 
@@ -23,12 +24,28 @@ Save the file and refresh the browser. There is no build command, framework, or 
 
 ## Add or remove an item
 
-- Experience entries: copy or delete one complete `<article class="experience-entry">` block in `index.html`.
-- Home project summaries: copy or delete one complete `<article class="project-preview">` block.
+- Home links: copy or delete one complete `<a class="home-link">` link and give it one of the existing color classes.
+- About-page skills: copy or delete one complete `<div class="skill-group">` block.
 - Portfolio case studies: copy or delete everything between a `PROJECT START` and matching `PROJECT END` comment.
-- About-page details: copy or delete one complete `<div class="fact">` row.
 
 When adding a new portfolio project, give it a unique `id`, such as `id="new-project"`, and link to it with `portfolio.html#new-project`.
+
+## Add project images
+
+The portfolio contains two image slots for the Grant, NFL, and Wildfire projects and three image slots for the NBA Team Builder.
+
+1. Save your PNG or JPG in the `project-images` folder.
+2. Open `portfolio.html` and search for `IMAGE SLOT`.
+3. Replace the placeholder `<div>` with the example `<img>` directly above it.
+4. Change the filename and the `alt` description to match your image.
+
+For example:
+
+```html
+<img src="project-images/nba-roster-builder.png" alt="NBA Team Builder player selection screen and roster">
+```
+
+Keep the `<figcaption>` below the image, or edit its text to explain what the screenshot demonstrates.
 
 ## Change the design
 
@@ -36,20 +53,22 @@ The most useful settings are at the top of `styles.css`:
 
 ```css
 :root {
-  --background: #f7f9fc;
-  --text: #16213e;
-  --accent: #2959c7;
-  --green: #167a59;
-  --purple: #7048b8;
-  --orange: #bd5b24;
+  --background: #0b1020;
+  --text: #f1f4fa;
+  --blue: #60a5fa;
+  --green: #4ade80;
+  --purple: #b69af4;
+  --orange: #fb923c;
 }
 ```
 
-Changing these values updates all three pages. Color is used for navigation, section bands, and project identity while the layout remains based on whitespace and thin dividers instead of many cards.
+Changing these values updates both pages. The website uses the browser's default HTML font and a dark color scheme. It is designed for desktop computers only; the stylesheet intentionally has no small-screen layout rules.
 
 ## Repository links
 
-The Grant Intelligence repository is public. The NFL repository URL is configured in the local project but is not currently public. The Wildfire project currently links to the GitHub profile until its own repository is published. Comments beside both links show exactly where to replace them later.
+The Grant Intelligence repository is public. The NFL repository URL is configured in the local project but is not currently public. The Wildfire project currently links to the GitHub profile until its own repository is published. Comments beside both links show exactly where to replace them later. The NBA Team Builder links to its video demo and shared project-files folder.
+
+The LinkedIn profile URL was not available. In `about.html`, search for `LINKEDIN` and replace the clearly marked placeholder with the example link shown in the HTML comment.
 
 ## Preview
 
